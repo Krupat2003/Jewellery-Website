@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jewellery</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light bgnav">
+        <div class="container-fluid">
+            <a class="navbar-brand nav1" href="#">Jewellery</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Collection</a>
+                    </li>
+                    <li class="nav-item" data-bs-toggle="modal" data-bs-target="#exampleModalLogin">
+                        <a class="nav-link text-dark" href="#">Login</a>
+                    </li>
+
+                    <!-- login model start -->
+                    <div class="modal fade" id="exampleModalLogin" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Login User</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- login form start  -->
+
+                                    <form>
+                                        <div class="row mb-3">
+                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                            <div class="col-sm-10">
+                                                <input type="email" class="form-control" id="inputEmail3">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                                            <div class="col-sm-10">
+                                                <input type="password" class="form-control" id="inputPassword3">
+                                            </div>
+                                        </div>
+
+
+                                        <!-- <button type="submit" class="btn btn-primary">Sign in</button> -->
+                                    </form>
+                                    <!-- login form end -->
+                                </div>
+                                <div class="modal-footer">
+                                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                                    <button type="button" class="btn btn-secondary">Login</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- login model end -->
+                    <li class="nav-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <a class="nav-link text-dark " href="#">Register</a>
+                    </li>
+                    <!-- register model start  -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="row g-3">
+                                        <div class="col-md-12">
+                                            <label for="inputnm" class="form-label">Name</label>
+                                            <input type="text" class="form-control" id="inputnm">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label for="inputEmail4" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label for="inputPassword4" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="inputPassword4">
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                                    <button type="button" class="btn btn-secondary">Register</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- register model end  -->
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- carousel image start  -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner bgimg">
+            <div class="carousel-item active">
+                <img src="https://img.freepik.com/premium-photo/womens-necklace-pendant-letter-b-leaves-with-black-background_529197-710.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5 class="bgh">First slide label</h5>
+                    <p class="bgp">Some representative placeholder content for the first slide.</p> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://img.freepik.com/premium-photo/womens-pendant-necklace-with-close-angle-with-black-background_529197-712.jpg?w=360"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5 class="bgh">Second slide label</h5>
+                    <p class="bgp">Some representative placeholder content for the second slide.</p> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.pinimg.com/600x315/68/4b/d4/684bd48ead67c31b0b0880efacf7cbe5.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5 class="bgh">Third slide label</h5>
+                    <p class="bgp">Some representative placeholder content for the third slide.</p> -->
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- carousel image end  -->
+
+    <p class="h2" style=" font-family: 'Times New Roman', Times, serif;">Our Collection</p>
+    <!-- card start  -->
+    <div class="container">
+        <div class="row space">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://kinclimg5.bluestone.com/f_jpg,c_scale,w_1024,q_80,b_rgb:f0f0f0/giproduct/BIAR0097R01_YAA18DIG6XXXXXXXX_ABCD00-PICS-00001-1024-14141.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ring</h5>
+                        <p class="card-text">$16000</p>
+                        <a href="#" class="btn btn-secondary">Buy now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://kinclimg5.bluestone.com/f_jpg,c_scale,w_1024,q_80,b_rgb:f0f0f0/giproduct/BISP0355N04_YAA18DIG6XXXXXXXX_ABCD00-PICS-00003-1024-22584.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pendent</h5>
+                        <p class="card-text">$340000</p>
+                        <a href="#" class="btn btn-secondary">Buy now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://kinclimg8.bluestone.com/f_jpg,c_scale,w_1024,q_80,b_rgb:f0f0f0/giproduct/BISP0514C03_YAA18DIG6XXXXXXXX_ABCD00-PICS-00004-1024-41814.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">mangalsutra</h5>
+                        <p class="card-text">$35500</p>
+                        <a href="#" class="btn btn-secondary">Buy now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://kinclimg2.bluestone.com/f_jpg,c_scale,w_828,q_80,b_rgb:f0f0f0/giproduct/BINI0425B13_YAA18DIG6XXXXXXXX_ABCD00-PICS-00002-1024-26221.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bangle</h5>
+                        <p class="card-text">$550000</p>
+                        <a href="#" class="btn btn-secondary">Buy now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- card end  -->
+    <!-- card start  -->
+    <div class="container">
+        <div class="row space">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://kinclimg4.bluestone.com/f_jpg,c_scale,w_1024,b_rgb:f0f0f0/giproduct/BIDG0198V04_YAA18DIG6XXXXXXXX_ABCD00-PICS-00000-1024-8383.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Breslet</h5>
+                        <p class="card-text">$260000</p>
+                        <a href="#" class="btn btn-secondary">Buy now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://kinclimg1.bluestone.com/f_jpg,c_scale,w_1024,q_80,b_rgb:f0f0f0/giproduct/BIRS0489S17_YAA18DIG6XXXXXXXX_ABCD00-PICS-00004-1024-35858.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Earings</h5>
+                        <p class="card-text">$150000</p>
+                        <a href="#" class="btn btn-secondary">Buy now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://kinclimg0.bluestone.com/f_jpg,c_scale,w_1024,q_80,b_rgb:f0f0f0/giproduct/BIPO0790V02_YAA18XXXXXXXXXXXX_ABCD00-PICS-00000-1024-56807.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Najariya</h5>
+                        <p class="card-text">$120000</p>
+                        <a href="#" class="btn btn-secondary">Buy now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://kinclimg0.bluestone.com/f_jpg,c_scale,w_828,q_80,b_rgb:f0f0f0/giproduct/BIRS0004S09_YAA18XXXXXXXXXXXX_ABCD00-PICS-00004-1024-60994.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"> Kids Earings</h5>
+                        <p class="card-text">$100000</p>
+                        <a href="#" class="btn btn-secondary">Buy now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- card end  -->
+
+    <!-- About us card start  -->
+    <div class="container">
+        <div class="row">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-6 abtimg">
+                        <img src="https://cdn.myportfolio.com/41abc532-432e-45a7-bd9e-faaf035ab8ed/747f88b4-38df-443e-8770-758f66d40bf5_rw_3840.jpg?h=a996dba10c4890c98c8f9709bc1fea48"
+                            class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title about">About Us</h5>
+                            <p class="card-text" style="padding-left: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque porro
+                                corrupti eveniet quam in ipsam rem vero officiis unde eius commodi eaque harum nulla,
+                                saepe incidunt delectus veritatis optio atque error doloribus rerum quasi fugiat.</p>
+                            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                            <button type="submit" class="btn btn-secondary" style="margin-left: 20px;" >Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about us card end  -->
+
+    <!-- video start  -->
+    <div class="container">
+        <iframe width="100%" height="400px" src="https://www.youtube.com/embed/aKpCjCyG_hU"
+            title="elegant adjustable diamondring designs#goldjewellery #perhiasanemas #diamond#zargarlik buyumlari"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+    <!-- video end  -->
+
+
+    <!-- animation start  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://lottie.host/ddabbfe4-4d13-4450-88ff-cbbf47377951/7iVMEqskru.json"
+                    background="#FFFFFF" speed="1" style="width: 300px; height: 300px" loop controls autoplay
+                    direction="1" mode="normal"></lottie-player>
+            </div>
+            <div class="col-md-4">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://lottie.host/de853d76-b524-436a-ab40-169da327dff0/VpfLlOOaIv.json"
+                    background="#FFFFFF" speed="1" style="width: 300px; height: 300px" loop controls autoplay
+                    direction="1" mode="normal"></lottie-player>
+            </div>
+            <div class="col-md-4">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://lottie.host/1807d383-7ad2-49a0-afe9-2428146522b5/le9ZhFTw4h.json"
+                    background="#FFFFFF" speed="1" style="width: 300px; height: 300px" loop controls autoplay
+                    direction="1" mode="normal"></lottie-player>
+            </div>
+        </div>
+        <br><br>
+        <!-- animation end  -->
+
+              
+        <div class="container">
+            <div class="row space">
+                <!-- contact form start  -->
+                <div class="col-md-6 contbg">
+                    <p class="h2" style=" font-family: 'Times New Roman', Times, serif;">Contact Details</p>
+                    <form class="row g-3">
+                        <div class="col-md-12">
+                            <label for="inputnm" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="inputnm">
+                        </div>
+                        <!-- <div class="col-md-12">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div> -->
+                        <div class="col-md-12">
+                            <label for="inputcont" class="form-label">Contact</label>
+                            <input type="tel" class="form-control" id="inputcont">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="inputmsg" class="form-label">Message</label>
+                            <input type="textarea" class="form-control" id="inputmsg">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-secondary">Send</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- contact form end  -->
+
+                <!-- accordian start  -->
+                <div class="col-md-6">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Accordion Item #1
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Accordion Item #2
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Accordion Item #3
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- accordian end  -->
+            </div>
+        </div>
+
+        <!-- map start  -->
+        <div class="container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.0186940907365!2d72.5540927713402!3d23.023085816316563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85558e268fcd%3A0xe5ba6fa8382060ed!2sFelix%20IT%20Systems%20%7C%20UI%20UX%20Design%20Courses%20in%20Ahmedabad%20%7C%20Fullstack%20courses%20with%20Placement!5e0!3m2!1sen!2sin!4v1690510842801!5m2!1sen!2sin"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <!-- map end  -->
+
+        <!-- footer start  -->
+        <!-- Remove the container if you want to extend the Footer to full width. -->
+        <div class="container my-5">
+
+            <footer class="text-dark text-center text-lg-start footerbg">
+                <!-- Grid container -->
+                <div class="container p-4">
+                    <!--Grid row-->
+                    <div class="row mt-4">
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-4">About company</h5>
+
+                            <p>
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                voluptatum deleniti atque corrupti.
+                            </p>
+
+                            <p>
+                                Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+                                molestias.
+                            </p>
+
+                            <!-- <div class="mt-4"> -->
+                            <!-- Facebook -->
+                            <!-- <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-facebook-f"></i></a> -->
+                            <!-- Dribbble -->
+                            <!-- <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-dribbble"></i></a> -->
+                            <!-- Twitter -->
+                            <!-- <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-twitter"></i></a> -->
+                            <!-- Google + -->
+                            <!-- <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-google-plus-g"></i></a> -->
+                            <!-- Linkedin -->
+                            <!-- </div> -->
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+
+                            <div class="form-outline form-white mb-4">
+                                <input type="text" id="formControlLg" class="form-control form-control-lg" />
+                                <label class="form-label" for="formControlLg">Search</label>
+                            </div>
+
+                            <ul class="fa-ul" style="margin-left: 1.65em;">
+                                <li class="mb-3">
+                                    <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Warsaw,
+                                        00-967, Poland</span>
+                                </li>
+                                <li class="mb-3">
+                                    <span class="fa-li"><i class="fas fa-envelope"></i></span><span
+                                        class="ms-2">contact@example.com</span>
+                                </li>
+                                <li class="mb-3">
+                                    <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 48 234
+                                        567 88</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+                            <table class="table text-center text-dark">
+                                <tbody class="fw-normal">
+                                    <tr>
+                                        <td>Mon - Thu:</td>
+                                        <td>8am - 9pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fri - Sat:</td>
+                                        <td>8am - 1am</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sunday:</td>
+                                        <td>9am - 10pm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </div>
+                <!-- Grid container -->
+
+                <!-- Copyright -->
+                <div class="text-center p-3">
+                    © 2020 Copyright:
+                    <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                </div>
+                <!-- Copyright -->
+            </footer>
+
+        </div>
+        <!-- End of .container -->
+        <!-- footer end  -->
+
+        <!-- bootstrap js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
